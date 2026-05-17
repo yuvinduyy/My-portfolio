@@ -9,8 +9,8 @@ function Contact() {
       <div className="max-w-xl mx-auto text-center text-gray-400">
 
         <p>Email: yuvindu000@gmail.com</p>
-        <p className="mt-2">LinkedIn: linkedin.com/in/yourprofile</p>
-        <p className="mt-2">GitHub: github.com/yourprofile</p>
+        <p className="mt-2">LinkedIn: linkedin.com</p>
+        <p className="mt-2">GitHub: github.com</p>
 
       </div>
 

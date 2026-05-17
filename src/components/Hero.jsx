@@ -1,7 +1,14 @@
+import { motion } from "framer-motion"
+
 function Hero() {
   return (
-    <section id="home" className="h-screen flex flex-col justify-center items-center text-center px-6">
-
+    <motion.section
+        id="home"
+        className="h-screen flex flex-col justify-center items-center text-center px-6"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+>
       <p className="text-blue-400 text-lg mb-3">
         Hello, I'm
       </p>
@@ -20,17 +27,23 @@ function Hero() {
 
       <div className="flex gap-4">
 
-        <a href="#projects" className="bg-blue-500 px-6 py-3 rounded-xl hover:bg-blue-600 transition">
-          View Projects
-        </a>
+            <a
+                href="#projects"
+                className="bg-blue-500 px-6 py-3 rounded-xl hover:bg-blue-600 transition transform hover:scale-105"
+            >
+                View Projects
+            </a>
 
-        <a href="#contact" className="border border-gray-600 px-6 py-3 rounded-xl hover:border-white transition">
-          Contact Me
-        </a>
+            <a
+                href="#contact"
+                className="border border-gray-600 px-6 py-3 rounded-xl hover:border-white transition transform hover:scale-105"
+            >
+                Contact Me
+            </a>
 
-      </div>
+        </div>
 
-    </section>
+    </motion.section>
   )
 }
 

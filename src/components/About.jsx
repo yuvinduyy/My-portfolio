@@ -1,6 +1,14 @@
+import { motion } from "framer-motion"
 function About() {
   return (
-    <section id="about" className="py-32 px-6">
+    <motion.section
+            id="about"
+            className="py-32 px-6"
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+>
 
       <div className="max-w-6xl mx-auto">
 
@@ -35,7 +43,7 @@ function About() {
 
       </div>
 
-    </section>
+    </motion.section>
   )
 }
 

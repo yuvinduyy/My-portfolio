@@ -30,7 +30,7 @@ function Projects() {
         {projects.map((p, index) => (
           <div
             key={index}
-            className="bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-blue-500 transition"
+            className="bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-blue-500 hover:-translate-y-2 transition duration-300"
           >
 
             <h3 className="text-xl font-semibold mb-3">
